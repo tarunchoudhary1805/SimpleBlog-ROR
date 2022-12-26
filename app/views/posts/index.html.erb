@@ -1,8 +1,16 @@
-<h1>Blog Posts</h1>
+<h1 class="display-6 my-4">Blog Posts</h1>
 
-<% @posts.each do |post| %>
+<div class="">
+  <% @posts.each do |post| %>
+ 
 
-<h3><%= post.title %></h3>
-<p><%= post.body %></p>
-
-<% end %>
+    <div class="card mx-2 col-md-12 my-2">
+      <div class="card-body">
+        <h5 class="card-title"><%= post.title %>
+        </h5>
+        <p class="card-text"><%= post.body %></p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  <% end %>
+</div>
